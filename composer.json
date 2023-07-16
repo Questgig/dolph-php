@@ -1,6 +1,6 @@
 {
     "name": "dolph-php/framework",
-    "description": "A simple, light and advanced PHP framework",
+    "description": "Dolph PHP is an advanced PHP framework designed to elevate the language and empower developers with modern tools and capabilities.",
     "type": "library",
     "keywords": ["php","framework", "dolph php"],
     "license": "MIT",
