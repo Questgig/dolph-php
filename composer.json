@@ -1,0 +1,25 @@
+{
+    "name": "dolph-php/framework",
+    "description": "A simple, light and advanced PHP framework",
+    "type": "library",
+    "keywords": ["php","framework", "dolph php"],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"DolphPHP\\": "src/"}
+    },
+    "scripts": {
+      "lint": "./vendor/bin/pint --test",
+      "format": "./vendor/bin/pint",
+      "check": "./vendor/bin/phpstan analyse -l 5 src tests"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.25",
+        "vimeo/psalm": "4.27.0",
+        "laravel/pint": "^1.2",
+        "phpstan/phpstan": "1.9.x-dev"
+    }
+}
