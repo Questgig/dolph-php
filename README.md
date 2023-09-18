@@ -24,13 +24,6 @@ Dolph PHP is an advanced PHP framework designed to elevate the language and empo
 - **Testing Framework**: Built-in testing framework for unit tests, integration tests, and automated testing.
 - **Comprehensive Documentation**: Extensive documentation with tutorials, examples, and guides to help you get started and make the most out of the framework.
 
-## Getting Started
-
-To get started with Dolph PHP, follow the installation guide and explore the documentation available at [Dolph PHP Documentation](https://dolph-php.com/docs).
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to Dolph PHP, please read our [Contribution Guidelines](https://dolph-php.com/contributing) for instructions.
 
 ## License
 
