@@ -279,7 +279,7 @@ App::shutdown(function($request) {
 
 
 # Running Locally
-If you have PHP and Composer installed on your device, you can run Dolph PHP apps locally by downloading the Questgig/dolph-php dependency using `composer require dolph-php` command.
+If you have PHP and Composer installed on your device, you can run Dolph PHP apps locally by downloading the Questgig/dolph-php dependency using `composer require dolph-php/framework` command.
 
 > Dolph PHP Framework requires PHP 7.3 or later. We recommend using the latest PHP version whenever possible.
 
