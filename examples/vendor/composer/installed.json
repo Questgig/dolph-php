@@ -1,0 +1,55 @@
+{
+    "packages": [
+        {
+            "name": "dolph-php/framework",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Questgig/dolph-php.git",
+                "reference": "f16d362586d02d0750a1c2c78e6c6e7707629e85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Questgig/dolph-php/zipball/f16d362586d02d0750a1c2c78e6c6e7707629e85",
+                "reference": "f16d362586d02d0750a1c2c78e6c6e7707629e85",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.2",
+                "phpstan/phpstan": "1.9.x-dev",
+                "phpunit/phpunit": "^9.5.25",
+                "vimeo/psalm": "4.27.0"
+            },
+            "time": "2023-09-24T08:46:45+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DolphPHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Dolph PHP is an advanced PHP framework designed to elevate the language and empower developers with modern tools and capabilities.",
+            "keywords": [
+                "dolph php",
+                "framework",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/Questgig/dolph-php/issues",
+                "source": "https://github.com/Questgig/dolph-php/tree/main"
+            },
+            "install-path": "../dolph-php/framework"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

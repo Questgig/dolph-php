@@ -10,29 +10,34 @@ If you’re new to Dolph PHP, let’s get started by looking at an example of a 
 
 ```php
 use DolphPHP\App;
-use DolphPHP\Request;
-use DolphPHP\Response;
+use DolphPHP\Swoole\Request;
+use DolphPHP\Swoole\Response;
+use Swoole\Http\Server;
+use Swoole\Http\Request as SwooleRequest;
+use Swoole\Http\Response as SwooleResponse;
 
-App::get('/hello-world') // Define Route
-    ->inject('request')
-    ->inject('response')
-    ->action(
-        function($request, $response) {
-            $response
-              ->addHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-              ->addHeader('Expires', '0')
-              ->addHeader('Pragma', 'no-cache')
-              ->send("<div> Hello World! </div>");
-        }
-    );
+$http = new Server("0.0.0.0", 8080);
+ 
+App::get('/')
+   ->inject('request')
+   ->inject('response')
+   ->action(
+       function($request, $response) {
+           // Return raw HTML
+           $response->send("<div> Hello World! </div>");
+       }
+/*
+   Configure your HTTP server to respond with the Dolph PHP app.   
+*/
 
-App::setMode(App::MODE_TYPE_PRODUCTION); // Define Mode
+$http->on('request', function (SwooleRequest $swooleRequest, SwooleResponse $swooleResponse) {
+   $request = new Request($swooleRequest);
+   $response = new Response($swooleResponse);
+   $app = new App('America/Toronto');
+   $app->run($request, $response);
+});
 
-$app        = new App('America/New_York');
-$request    = new Request();
-$response   = new Response();
-
-$app->run($request, $response);
+$http->start();
 ```
  
 
